@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+margin: 0;
+padding: 0;
+}
+
+#showcase {
+    position: relative;
+    animation-name: krasniy;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes krasniy {
+    0% {
+     top: -100px;
+    }
+    
+    100% {
+    top: 0px;
+  
+  }
+}
+
+#showcase3 {
+    position: relative;
+    animation-name: zeleniy;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zeleniy {
+    0% {
+    opacity: 0%;
+    }
+    
+    100% {
+    opacity: 100%;
+  }
+}
+
+
+
+.yellow:hover {
+    transform: rotateY(180deg);
+}
+
+
+   
+
+.mainDiv {
+    height: 600px;
+    width: 600px;
+    background-color: aqua;
+    margin: 0 auto; 
+    font-size: 0px;
+    
+}
+.mainDiv > div{
+    /*display: inline-block; */
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.red {
+    background-color: red;
+    border-radius: 50%;
+}
+.yellow {
+    background-color: yellow;
+    border-radius: 50%;
+    animation-duration: 3s;
+    animation-delay: 3;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+.green {
+    background-color: green;
+    border-radius: 50%;
+}
